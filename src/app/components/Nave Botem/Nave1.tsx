@@ -18,7 +18,7 @@ import { CiSearch } from "react-icons/ci";             //icons search-bar
 
 const Nave1 = () => {
 
-    const [isEnglishOpen, setIsEnglishOpen] = useState(false);
+    // const [isEnglishOpen, setIsEnglishOpen] = useState(false);
     const [isUSAOpen, setIsUSAOpen] = useState(false);
     const [isHomeOpen, setIsHomeOpen] = useState(false);
 
@@ -30,9 +30,9 @@ const Nave1 = () => {
 
 
     // Toggle Country dropdown
-    const toggleEnglishDropdown = () => {
-        setIsEnglishOpen(!isEnglishOpen);
-    };
+    // const toggleEnglishDropdown = () => {
+    //     setIsEnglishOpen(!isEnglishOpen);
+    // };
 
     // Toggle Product dropdown
     const toggleUSADropdown = () => {
@@ -56,15 +56,10 @@ const Nave1 = () => {
                     </div>
                 </div>
                 <div className=' flex items-center space-y-'>
+
+
                     {/* Country Dropdown */}
-                    <div className="relative inline-block text-left">
-
-
-
-                       
-
-
-
+                    {/* <div className="relative inline-block text-left">
                         {isEnglishOpen && (
                             <ul className="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg z-10">
                                 <li className="px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer  hover:text-base hover:w-[50]  w-[50]">USA</li>
@@ -72,7 +67,10 @@ const Nave1 = () => {
                                 <li className="px-4 py-2 text-gray-700 hover:bg-gray-100 cursor-pointer  hover:text-base hover:w-[50]  w-[50]">Canada</li>
                             </ul>
                         )}
-                    </div>
+                    </div> */}
+
+
+                    
                     {/* Product Dropdown */}
                     <div className="relative inline-block text-left">
 

@@ -3,13 +3,14 @@ import React, { useState, useEffect } from 'react';
 import Carousel from "react-multi-carousel"; // ← ← Slider کو install کریں (npm install react-multi-carousel --save)
 import "react-multi-carousel/lib/styles.css";
 import { FeaturedProducts } from './FeaturedProducts';
-  // اپنے Product کمپوننٹ کو درآمد کریں
+// اپنے Product کمپوننٹ کو درآمد کریں
+
 
 const responsive = {
     superLargeDesktop: { breakpoint: { max: 4000, min: 3000 }, items: 4 },
     desktop: { breakpoint: { max: 3000, min: 1024 }, items: 4 },
     tablet: { breakpoint: { max: 1024, min: 464 }, items: 2 },
-    mobile: { breakpoint: { max: 464, min: 0 }, items: 1 }
+    mobile: { breakpoint: { max: 464, min: 1 }, items: 1 }
 };
 
 // state for deviceType
@@ -29,7 +30,7 @@ const SelaiderFeaturedProducts = () => {
         };
 
         // Initial check
-        updateDeviceType();
+
 
         // Add event listener to update deviceType on window resize
         window.addEventListener('resize', updateDeviceType);
@@ -50,7 +51,7 @@ const SelaiderFeaturedProducts = () => {
         { id: 7, imgeurl: "icon/image1168.png", name: "Cantilever chair", description: "Code - Y523201", price: "$42.00" },
         { id: 8, imgeurl: "icon/image1168.png", name: "Cantilever chair", description: "Code - Y523201", price: "$42.00" }
     ];
-    
+
 
     const productList = product.map((item) => (
         <FeaturedProducts
@@ -60,32 +61,33 @@ const SelaiderFeaturedProducts = () => {
             url={item.imgeurl}
             price={item.price}
             description={item.description}
-            // title={item.title}
+        // title={item.title}
         />
     ));
 
     return (
         <div className=' <div className="w-[1024] max-w-screen-xl   items-center  mx-auto'>
-           <div>
-           <h2 className='flex justify-center text-2xl text-yellow-300 font-bold pt-14 pb-5'> Featured Products</h2>
-           </div>
+            <div>
+                <h2 className='flex justify-center text-2xl text-yellow-300 font-bold pt-14 pb-5'> Featured Products</h2>
+            </div>
             <Carousel
-            arrows={false}  // یہ لائن ایرو بٹن ہٹانے کے لیے ہے
-                // swipeable={false}
-                // draggable={false}
-                // showDots={true}   //...
+
+                arrows={false}  // یہ لائن ایرو بٹن ہٹانے کے لیے ہے
+                swipeable={false}
+                draggable={false}
+                //  showDots={true}
                 responsive={responsive}
-               // ssr={true} // means to render carousel on server-side.
+                ssr={true} // means to render carousel on server-side.
                 infinite={true}
-                //autoPlay={deviceType !== "mobile"} // autoPlay based on deviceType
-                // autoPlaySpeed={1000}  //5000
-                // keyBoardControl={true}
-                                 // customTransition="all .5"
-                // transitionDuration={100}
-                // containerClass="carousel-container"
-                // removeArrowOnDeviceType={["tablet", "mobile"]}
-                // dotListClass="custom-dot-list-style"
-                // itemClass="carousel-item-padding-40-px"
+                autoPlay={deviceType !== "mobile"} // autoPlay based on deviceType
+                autoPlaySpeed={5000}  //←←5000
+                keyBoardControl={true}
+                //   customTransition="all .5"
+                transitionDuration={100}
+                containerClass="carousel-container"
+                removeArrowOnDeviceType={["tablet", "mobile"]}
+                dotListClass="custom-dot-list-style"
+                itemClass="carousel-item-padding-40-px"
             >
                 {productList}
             </Carousel>
@@ -103,6 +105,5 @@ export default SelaiderFeaturedProducts;
 
 
 
-       
-       
-    
+
+
