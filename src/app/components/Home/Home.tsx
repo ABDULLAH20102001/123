@@ -6,7 +6,7 @@ const Home5 = () => {
     <div>
       <div className='flex bg-[#F2F0FF] h-[450]   w-[1263] max-w-screen-xl   mx-auto'>
 
-        <div><Image src="icon/image 32.png" alt="" className='w-[260]' /></div>
+        <div><Image src="icon/image 32.png" alt="" className='w-[260] h-[100]' /></div>
 
         <div className='flex gap-[]'>
           <div className='flex flex-col mr- justify-center w-[520]   '>
