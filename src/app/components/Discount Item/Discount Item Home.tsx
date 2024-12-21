@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image';  // next/image کمپوننٹ کو ایمپورٹ کریں
 
 const DiscountItemHome = () => {
     return (
@@ -62,7 +63,7 @@ const DiscountItemHome = () => {
                                 <div className='bg-[#ECD2FA59] w-[350] h-[360] rounded-[410] ml-11 absolute  z-0  ' />
                                 {/* <div className='bg-[#ECD2FA59] w-[350] h-[360] rounded-[410] mt-[50] absolute   z-10 ' /> */}
                                 <div className='  ml-5 mt-1  absolute z-20'>
-                                    <img src="icon/tortuga-01-b 1.png" alt="" width={390} className='flex' />
+                                    <Image src="/tortuga-01.png" alt="" width={390} height={200} className='flex' />
                                 </div>
 
 

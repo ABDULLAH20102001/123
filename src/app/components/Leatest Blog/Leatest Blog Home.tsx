@@ -1,3 +1,4 @@
+import Image from 'next/image';  // next/image کمپوننٹ کو ایمپورٹ کریں
 import React from 'react'
 
 const LeatestBlogHome = () => {
@@ -12,13 +13,13 @@ const LeatestBlogHome = () => {
                             <button className='w-[110] h-[35px] bg-[#FB2E86]'>Shop Now</button>
                         </div>
                     </div>
-                    <img src="icon/Rectangle 102.png" alt="" className=' w-[1263] h-[450px] ' />
+                    <Image src="/Rectangle102.png" alt="" width={10000} height={1000} className=' w-[1263] h-[450px] ' />
 
                 </div>
 
                 <div className='flex justify-center'>
                     <div className='bg-red-300 flex justify-center items-center w-[700] h-[200]'>
-                        <img src="icon/image 1174.png" alt="" className='flex justify-center w-[650] h-[100]'/>
+                        <Image src="/image174.png" alt="" width={1000} height={500} className='flex justify-center w-[650] h-[100]'/>
                     </div>
                 </div>
 

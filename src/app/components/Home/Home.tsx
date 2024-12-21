@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const Home5 = () => {
@@ -5,7 +6,7 @@ const Home5 = () => {
     <div>
       <div className='flex bg-[#F2F0FF] h-[450]   w-[1263] max-w-screen-xl   mx-auto'>
 
-        <div><img src="icon/image 32.png" alt="" className='w-[260]' /></div>
+        <div><Image src="icon/image 32.png" alt="" className='w-[260]' /></div>
 
         <div className='flex gap-[]'>
           <div className='flex flex-col mr- justify-center w-[520]   '>
@@ -19,7 +20,7 @@ const Home5 = () => {
             <div className='bg-[#ECD2FA59] w-[400] h-[410] rounded-[410] ml-11 absolute  z-0  ' />
             <div className='bg-[#ECD2FA59] w-[400] h-[410] rounded-[410] mt-[50] absolute   z-10 ' />
             <div className='   ml- mt-14  absolute z-20'>
-              <img src="icon/Armchair-Fabric 1.png" alt="" width={380} className='' />
+              <Image src="icon/Armchair-Fabric 1.png" alt="" width={380} className='' />
             </div>
             {/* <div className='bg-[#00C1FE] w-[100] h-[100] rounded-[410] ml-[300] mb-[300] z-30 m   ' /> */}
             <div className='bg-[#00C1FE] w-[100] h-[100] rounded-[410] ml-[300] mb-[300] z-30 m    '> <h2 className='flex justify-center mt-5 text-white text-2xl font-semibold text-center'>50% <br />off</h2></div>
